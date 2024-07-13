@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Wizz</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Quiz Wizz</div>
+        <div class="links">
+          <a href="#topic">Topics</a>
+        </div>
+        
+      </nav>
+    </header>
+    <main>
+      <section class="shift" id="topic">
+        <div class="shift-container">
+          <div class="cards">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkruDh52xPjFuuYPYjmPY1PvRTcp9OsbvfPg&s"
+              alt=""
+            />
+            <div class="box">
+              <a href="#quiz" onclick="startQuiz('java')">JAVA Quiz</a>
+              <p>10 Question </p>
+            </div>
+          </div>
+          <div class="cards">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIJSpy9QiScV8r39Tre2S-iz5myIneJLR3w&s"
+              alt=""
+            />
+            <div class="box">
+              <a href="#quiz" onclick="startQuiz('js')">JavaScript Quiz</a>
+              <p>10 Question </p>
+            </div>
+          </div>
+          <div class="cards">
+            <img
+              src="https://www.unite.ai/wp-content/uploads/2022/04/AI-Python-Libraries-1000x600.png"
+              alt=""
+            />
+            <div class="box">
+              <a href="#quiz" onclick="startQuiz('python')">PYTHON Quiz</a>
+              <p>10 Question </p>
+            </div>
+          </div>
+          <div class="cards">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_nMFliu7xtEDHRtomwiB5LQIiVhzZjy_8w&s"
+              alt=""
+            />
+            <div class="box">
+              <a href="#quiz" onclick="startQuiz('cPlusPlus')">C++ Quiz</a>
+              <p>10 Question </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="quiz-content" id="quiz">
+        <div id="quiz-question" class="quiz-question"></div>
+        <div id="quiz-options" class="quiz-options"></div>
+        <div class="quiz-navigation">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+            <button id="submit-btn" style="display: none;">Submit</button>
+        </div>
+    </div>
+</div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</html>
